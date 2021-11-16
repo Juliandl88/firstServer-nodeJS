@@ -1,0 +1,26 @@
+{
+  "name": "firstserver-nodejs",
+  "version": "1.0.0",
+  "description": "Ejercicio práctico de servidor con nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Server",
+    "nodeJS",
+    "npm"
+  ],
+  "author": "Julian De Lisio",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

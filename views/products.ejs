@@ -1,0 +1,25 @@
+<%- include('partials/head') %>
+
+<h1>Products</h1>
+<ul>
+  <% for(var i = 0; i < items.length; i++) { %>
+  <li><%= items[i].name %></li>
+  <% }%>
+</ul>
+
+<h3>Add a new product</h3>
+
+<form action="/new-product" method="POST">
+	<input id="newItem" type="text" name="newItem">
+	<button>Add a Produt</button>
+</form>
+
+<script>
+	const txtNewItem = document.getElementById('newItem');
+	txtNewItem.focus();
+</script>
+<li>
+  <a href="/">Home</a>
+</li>
+
+<%- include('partials/footer') %>
